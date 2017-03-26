@@ -68,15 +68,15 @@ public class LoadingDialog {
         this.alpha = alpha;
         this.type = type;
         this.color = color;
-        init(this.type, this.color);
+        init();
     }
 
-    public void init(int type, @ColorInt int color) {
+    public void init() {
         builder = new AlertDialog.Builder(mcontext);
         View loading_dialog_ll = LayoutInflater.from(mcontext).inflate(R.layout.laoding_dialog, null);
         SpinKitView skv = (SpinKitView) loading_dialog_ll.findViewById(R.id.spin_kit);
-        skv.setColor(color);
-        switch (type) {
+        skv.setColor(this.color);
+        switch (this.type) {
             case 0:
                 ChasingDots chasingDots = new ChasingDots();
                 skv.setIndeterminateDrawable(chasingDots);
@@ -133,7 +133,7 @@ public class LoadingDialog {
         Window window = alertDialog.getWindow();
         //loading框透明度
         WindowManager.LayoutParams lp = window.getAttributes();
-        lp.alpha = alpha;
+        lp.alpha = this.alpha;
         window.setAttributes(lp);
     }
 
@@ -167,17 +167,21 @@ public class LoadingDialog {
 
     public void setColor(@ColorInt int color) {
         this.color = color;
+        init();
     }
 
     public void setType(int type) {
         this.type = type;
+        init();
     }
 
     public void setCancelable(boolean cancelable) {
         this.cancelable = cancelable;
+        init();
     }
 
     public void setAlpha(float alpha) {
         this.alpha = alpha;
+        init();
     }
 }
