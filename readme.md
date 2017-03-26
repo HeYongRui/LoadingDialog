@@ -1,2 +1,2 @@
 # LoadingDilog
-![baidu](https://static.oschina.net/uploads/space/2017/0322/164434_Y8pi_2743772.gif "百度logo")
+![baidu](https://raw.githubusercontent.com/HeYongRui/LoadingDilog/master/app/src/main/res/gif.gif "效果图")
