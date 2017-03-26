@@ -1,4 +1,4 @@
-# LoadingDilog
+# LoadingDialog
 ## 这是一个loading的加载框，可以定义多种样式，可以自定义设置颜色、透明度、是否可以取消等属性。使用非常简单，仅几行代码就可实现。
 ![baidu](https://raw.githubusercontent.com/HeYongRui/LoadingDilog/master/app/src/main/res/gif.gif "效果图")
 ## 使用方法
