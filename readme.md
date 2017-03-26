@@ -17,10 +17,16 @@
 	        compile 'com.github.HeYongRui:LoadingDilog:1.1'
 	}
 ```
-# 示例代码
+## 示例代码
+```Java
+LoadingDialog loadingDialog = new LoadingDialog(MainActivity.this,true,0.8f,LoadingDialog.ROTATINGPLANE,Color.BLUE);
+```
+或者
 ```Java
  LoadingDialog loadingDialog = new LoadingDialog(MainActivity.this);
  loadingDialog.setColor(Color.parseColor("#FFE3AB90"));
  loadingDialog.setType(LoadingDialog.WAVE);
+ loadingDialog.setAlpha(0.8f);
+ loadingDialog.setCancelable(true);
  loadingDialog.show();
 ```
