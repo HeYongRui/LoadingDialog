@@ -1,6 +1,7 @@
 # LoadingDilog
 ![baidu](https://raw.githubusercontent.com/HeYongRui/LoadingDilog/master/app/src/main/res/gif.gif "效果图")
-使用方法：
+*使用方法
+# 项目build.gradle配置：
 ```Java
 	allprojects {
 		repositories {
@@ -9,6 +10,7 @@
 		}
 	}
 ```
+**工程build.gradle配置：
 ```Java
 	dependencies {
 		compile 'com.github.User:Repo:Tag'
