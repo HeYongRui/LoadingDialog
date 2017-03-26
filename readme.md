@@ -14,7 +14,7 @@
 * 工程build.gradle配置：
 ```Java
 	dependencies {
-	        compile 'com.github.HeYongRui:LoadingDilog:1.1'
+	         compile 'com.github.HeYongRui:LoadingDialog:1.1'
 	}
 ```
 ## 示例代码
