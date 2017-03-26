@@ -26,6 +26,7 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:25.2.0'
     testCompile 'junit:junit:4.12'
-    compile 'com.github.ybq:Android-SpinKit:1.1.0'
-    compile project(':loadinglibrary')
+//    compile 'com.github.ybq:Android-SpinKit:1.1.0'
+//    compile project(':loadinglibrary')
+    compile 'com.github.HeYongRui:LoadingDilog:1.1'
 }
