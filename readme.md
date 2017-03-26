@@ -20,6 +20,7 @@
 ## 示例代码
 ```Java
 LoadingDialog loadingDialog = new LoadingDialog(MainActivity.this,true,0.8f,LoadingDialog.ROTATINGPLANE,Color.BLUE);
+loadingDialog.show();
 ```
 或者
 ```Java
@@ -30,3 +31,5 @@ LoadingDialog loadingDialog = new LoadingDialog(MainActivity.this,true,0.8f,Load
  loadingDialog.setCancelable(true);
  loadingDialog.show();
 ```
+## 感谢
+## 这里用到了ybq的[SpinKitView](https://github.com/ybq/Android-SpinKit)，写的非常好，我这里只是封装了一下成了一个dialog，感兴趣的可以去看一下。
