@@ -68,7 +68,7 @@ public class LoadingDialog {
         this.alpha = alpha;
         this.type = type;
         this.color = color;
-        init(type, color);
+        init(this.type, this.color);
     }
 
     public void init(int type, @ColorInt int color) {
