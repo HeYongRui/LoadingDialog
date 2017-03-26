@@ -17,7 +17,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button viewById = (Button) findViewById(R.id.btn);
-        loadingDialog = new LoadingDialog(this, true, 0.5f, LoadingDialog.CUBEGRID, Color.parseColor("#ff5588"));
+        loadingDialog = new LoadingDialog(this);
+        loadingDialog.setColor(Color.BLACK);
+        loadingDialog.setType(LoadingDialog.FOLDINGCUBE);
         viewById.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
